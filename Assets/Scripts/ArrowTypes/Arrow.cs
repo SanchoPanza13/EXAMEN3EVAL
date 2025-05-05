@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Arrow : Projectile
+public class Arrow : Projectile
 {
 
     public Sprite sprite;
@@ -14,7 +14,8 @@ public abstract class Arrow : Projectile
         this.damage = 25;
     }
 
-
-
-
+    public override void Move()
+    {
+        rb.velocity = new Vector2(0, speed);
+    }
 }

@@ -12,12 +12,9 @@ public abstract class Projectile
     protected float damage;
     protected Rigidbody2D rb;
     private Sprite sprite;
-    public Vector2 arrowmovement;
+    
 
-    //void start()
-    //{
-    //    arrowmovement = new Vector2(0, speed);
-    //}
+    
 
     public Projectile (float damage, float speed, Rigidbody2D rb)
     {
@@ -31,9 +28,7 @@ public abstract class Projectile
         return sprite;
     }
 
-    //public abstract void Move()
-    //{
-        
-    //}
+    public abstract void Move();
+    
 
 }
