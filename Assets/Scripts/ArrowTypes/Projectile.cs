@@ -12,8 +12,11 @@ public abstract class Projectile
     protected float damage;
     protected Rigidbody2D rb;
     private Sprite sprite;
-    
 
+    public Projectile()
+    {
+
+    }
     
 
     public Projectile (float damage, float speed, Rigidbody2D rb)
