@@ -13,23 +13,21 @@ public class PlayerShoot : MonoBehaviour
     private Arrow arrow;
     private IceArrow iceArrow;
     private Boomerang boomerang;
-    private Rigidbody2D rbArrow;
-    private Rigidbody2D rbIceArrow;
-    private Rigidbody2D rbBoomerang;
+    private Rigidbody2D rb;
 
-    // Start is called before the first frame update
+    // Start is called before the first frame update            I'm tweaking vro
     void Start()
     {
         switch (arrowType)
         {
             case arrowType.ARROW:
-                arrow = new Arrow(25, 30, rbArrow);
+                arrow = new Arrow(25, 30, rb);
                 break;
             case arrowType.ICEARROW:
-                iceArrow = new IceArrow(10, 15, rbIceArrow);
+                iceArrow = new IceArrow(10, 15, rb);
                 break;
             case arrowType.BOOMERANG:
-                boomerang = new Boomerang(8, 10, rbBoomerang);
+                boomerang = new Boomerang(8, 10, rb);
                 break;
 
         }
