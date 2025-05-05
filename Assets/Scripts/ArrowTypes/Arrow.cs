@@ -7,7 +7,7 @@ public class Arrow : Projectile
 
     public Sprite sprite;
 
-    Arrow(float damage, float speed, Rigidbody2D rb) : base(damage, speed, rb)
+    public Arrow(float damage, float speed, Rigidbody2D rb) : base(damage, speed, rb)
     {
         this.rb = rb;
         this.speed = 30;

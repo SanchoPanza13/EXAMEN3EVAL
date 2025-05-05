@@ -7,7 +7,7 @@ public class IceArrow : Projectile
     public Sprite sprite;
     public float xSpeed;
 
-    IceArrow(float damage, float speed, Rigidbody2D rb): base (damage, speed, rb)
+    public IceArrow(float damage, float speed, Rigidbody2D rb): base (damage, speed, rb)
     {
         this.rb = rb;
         this.damage = 10;
