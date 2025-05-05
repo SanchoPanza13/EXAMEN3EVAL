@@ -41,7 +41,7 @@ public class PlayerShoot : MonoBehaviour
 
         if (currentTime > timeToShoot && Input.GetMouseButton(0)) 
         {
-           
+           Instantiate(projectile);
         }
 
         if(Input.GetKeyDown(KeyCode.Space))
