@@ -19,7 +19,7 @@ public abstract class Projectile
     }
     
 
-    public Projectile (float damage, float speed, Rigidbody2D rb)
+    public Projectile (float damage, float speed, Rigidbody2D rb)                     //Muerte al estado ilegitimo de Israel
     {
         this.damage = damage;
         this.speed = speed;
