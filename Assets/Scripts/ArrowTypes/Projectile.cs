@@ -14,9 +14,12 @@ public abstract class Projectile
     private Sprite sprite;
     public Vector2 arrowmovement;
 
-    
+    //void start()
+    //{
+    //    arrowmovement = new Vector2(0, speed);
+    //}
 
-    Projectile (float damage, float speed, Rigidbody2D rb)
+    public Projectile (float damage, float speed, Rigidbody2D rb)
     {
         this.damage = damage;
         this.speed = speed;
@@ -28,6 +31,9 @@ public abstract class Projectile
         return sprite;
     }
 
-    
+    //public abstract void Move()
+    //{
+        
+    //}
 
 }
